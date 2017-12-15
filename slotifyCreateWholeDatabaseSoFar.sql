@@ -125,10 +125,10 @@ CREATE TABLE IF NOT EXISTS `playlistSongs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Songs`
+-- Table structure for table `songs`
 --
 
-CREATE TABLE IF NOT EXISTS `Songs` (
+CREATE TABLE IF NOT EXISTS `songs` (
 `id` int(11) NOT NULL,
   `title` varchar(250) NOT NULL,
   `artist` int(11) NOT NULL,
@@ -141,10 +141,10 @@ CREATE TABLE IF NOT EXISTS `Songs` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=32 ;
 
 --
--- Dumping data for table `Songs`
+-- Dumping data for table `songs`
 --
 
-INSERT INTO `Songs` (`id`, `title`, `artist`, `album`, `genre`, `duration`, `path`, `albumOrder`, `plays`) VALUES
+INSERT INTO `songs` (`id`, `title`, `artist`, `album`, `genre`, `duration`, `path`, `albumOrder`, `plays`) VALUES
 (1, 'Acoustic Breeze', 1, 5, 8, '2:37', 'assets/music/bensound-acousticbreeze.mp3', 1, 10),
 (2, 'A new beginning', 1, 5, 1, '2:35', 'assets/music/bensound-anewbeginning.mp3', 2, 4),
 (3, 'Better Days', 1, 5, 2, '2:33', 'assets/music/bensound-betterdays.mp3', 3, 10),
@@ -237,9 +237,9 @@ ALTER TABLE `playlistSongs`
  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `Songs`
+-- Indexes for table `songs`
 --
-ALTER TABLE `Songs`
+ALTER TABLE `songs`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -278,9 +278,9 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 ALTER TABLE `playlistSongs`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `Songs`
+-- AUTO_INCREMENT for table `songs`
 --
-ALTER TABLE `Songs`
+ALTER TABLE `songs`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=32;
 --
 -- AUTO_INCREMENT for table `users`
